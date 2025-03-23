@@ -34,6 +34,8 @@ The dataset is provided in json format and contains the following attributes at 
 }
 ```
 
+The images used in FinMMR are provided at the `images` directory.
+
 ## Experiments
 
 ### Directory Structure
