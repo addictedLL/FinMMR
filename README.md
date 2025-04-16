@@ -36,6 +36,30 @@ The dataset is provided in json format and contains the following attributes at 
 
 The images used in FinMMR are provided at the `images` directory.
 
+## Financial Functions Library
+
+The financial functions library is a collection of financial functions that are used to solve the financial numerical reasoning problems. It is provided in json format and contains the following attributes at the `data/functions` directory:
+
+```json
+{
+    "function_id": "[string] Unique identifier for the function",
+    "function": "[string] The function code",
+    "function_docstring": "[string] The docstring of the function"
+}
+```
+
+## Financial Documents Library
+
+The financial documents library is a collection of financial documents that are used to solve the financial numerical reasoning problems. It is provided in json format and contains the following attributes at the `data/documents` directory:
+
+```json
+{
+    "document_id": "[string] Unique identifier for the document",
+    "document": "[string] The document text",
+    "document_docstring": "[string] The docstring of the document"
+}
+```
+
 ## Experiments
 
 ### Directory Structure
@@ -48,7 +72,11 @@ The images used in FinMMR are provided at the `images` directory.
 │   ├── medium_validation_*.json   # Medium difficulty validation dataset
 │   ├── medium_test_*.json         # Medium difficulty test dataset
 │   ├── hard_validation_*.json     # Hard difficulty validation dataset
-│   └── hard_test_*.json           # Hard difficulty test dataset
+│   ├── hard_test_*.json           # Hard difficulty test dataset
+│   ├── functions/
+│   │   └──financial_documents.json
+│   └── documents/
+│       └──functions-article-all.json               
 │
 ├── inference/                      # Inference related code and configuration
 │   ├── inference.py              # Main inference code
