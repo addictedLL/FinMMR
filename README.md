@@ -67,16 +67,24 @@ The financial documents library is a collection of financial documents that are 
 ```
 .
 ├── data/                           # Data directory
-│   ├── easy_validation_*.json     # Easy difficulty validation dataset
-│   ├── easy_test_*.json           # Easy difficulty test dataset
-│   ├── medium_validation_*.json   # Medium difficulty validation dataset
-│   ├── medium_test_*.json         # Medium difficulty test dataset
-│   ├── hard_validation_*.json     # Hard difficulty validation dataset
-│   ├── hard_test_*.json           # Hard difficulty test dataset
-│   ├── functions/
-│   │   └──financial_documents.json
-│   └── documents/
-│       └──functions-article-all.json               
+│   ├── easy_validation_*.json     # CoT&PoT Prompts for easy difficulty validation subset
+│   ├── easy_test_*.json           # CoT&PoT Prompts for easy difficulty test subset
+│   ├── medium_validation_*.json   # CoT&PoT Prompts for medium difficulty validation subset
+│   ├── medium_test_*.json         # CoT&PoT Prompts for medium difficulty test subset
+│   ├── hard_validation_*.json     # CoT&PoT Prompts for hard difficulty validation subset
+│   ├── hard_test_*.json           # CoT&PoT Prompts for hard difficulty test subset
+│   ├── validation/       # Validation subset
+|      ├── easy_validation.json     # Easy difficulty validation subset         
+|      ├── medium_validation.json   # Medium difficulty validation subset
+|      └── hard_validation.json     # Hard difficulty validation subset
+│   └── test/             # Test subset
+|      ├── easy_test.json           # Easy difficulty test subset         
+|      ├── medium_test.json         # Medium difficulty test subset
+|      └── hard_test.json           # Hard difficulty test subset
+│   ├── functions/        # Financial functions library
+│       └──functions-article-all.json 
+│   └── documents/        # Financial documents library
+│       └──financial_documents.json               
 │
 ├── inference/                      # Inference related code and configuration
 │   ├── inference.py              # Main inference code
